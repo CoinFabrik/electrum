@@ -61,6 +61,20 @@ def set_testnet():
     HEADERS_URL = "https://headers.electrum.org/testnet_headers"
     GENESIS = "000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943"
 
+def set_testnet5():
+    global ADDRTYPE_P2PKH, ADDRTYPE_P2SH, ADDRTYPE_P2WPKH
+    global XPRV_HEADER, XPUB_HEADER
+    global TESTNET, HEADERS_URL
+    global GENESIS
+    TESTNET = True
+    ADDRTYPE_P2PKH = 111
+    ADDRTYPE_P2SH = 196
+    ADDRTYPE_P2WPKH = 3
+    XPRV_HEADER = 0x04358394
+    XPUB_HEADER = 0x043587cf
+    HEADERS_URL = "https://localhost/testnet_headers"
+    GENESIS = "000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943"
+
 def set_nolnet():
     global ADDRTYPE_P2PKH, ADDRTYPE_P2SH, ADDRTYPE_P2WPKH
     global XPRV_HEADER, XPUB_HEADER

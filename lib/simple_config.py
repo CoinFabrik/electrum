@@ -82,6 +82,8 @@ class SimpleConfig(PrintError):
 
         if self.get('testnet'):
             path = os.path.join(path, 'testnet')
+        elif self.get('testnet5'):
+            path = os.path.join(path, 'testnet5')
         elif self.get('nolnet'):
             path = os.path.join(path, 'nolnet')
 

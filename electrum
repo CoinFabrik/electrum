@@ -359,6 +359,10 @@ if __name__ == '__main__':
         bitcoin.set_testnet()
         network.set_testnet()
 
+    if config.get('testnet5'):
+        bitcoin.set_testnet5()
+        network.set_testnet5()
+
     if config.get('nolnet'):
         bitcoin.set_nolnet()
         network.set_nolnet()
